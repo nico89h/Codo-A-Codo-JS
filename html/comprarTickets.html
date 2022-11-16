@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tp integrador</title>
+    <link rel="stylesheet" href="../bootstrap-5.2.2-dist/css/bootstrap.min.css">
+</head>
+
+<body>
+    <!--Inicio de la navegacion-->
+    <div class="container-fluid">
+        <div class="row inicio">
+            <!--Inicio de imagen de el nav-->
+            <div class="col-5 imagenNavegador">
+                <figure>
+                    <img src="../imagenes_integrador_front-_1_/codoacodo.png" alt="Codo a codo">
+                </figure>
+                <h2>Conf Bs As</h2>
+            </div>
+            <!--inicio de el menu-->
+            <nav class="navbar navbar-expand-lg col-7 navegador" style="background-color:rgb(68, 63, 63);">
+                <div class="container-fluid">
+                <button class="navbar-toggler collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="navbar-collapse collapse" id="navbarSupportedContent" >
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="#">La conferencia</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="#">Los Oradores</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="#">El lugar y la fecha</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="#">Comprar tickets</a>
+                    </li>
+                    </ul>
+                </div>
+                </div>
+            </nav>
+        </div>
+    </div>
+    <main>
+        <section class="container-fluid">
+            <div class="row cartas-tickets">
+                <div class="card border-primary mb-3 col-3" style="max-width: 18rem;margin:20px;">
+                    <div class="card-header">Estudiante</div>
+                    <div class="card-body text-primary">
+                        <p class="card-text">Tiene un descuento</p>
+                        <h5 class="card-title">80%</h5>
+                        <h6 class="card-subtitle mb-2 text-muted">*Presentar documentacion</h6>
+                    </div>
+                </div>
+                <div class="card border-secondary mb-3 col-3" style="max-width: 18rem;margin:20px;">
+                    <div class="card-header">Trainee</div>
+                    <div class="card-body text-secondary">
+                        <p class="card-text">Tiene descuento</p>
+                        <h5 class="card-title">50%</h5>
+                        <h6 class="card-subtitle mb-2 text-muted">*Presentar documentacion</h6>
+                    </div>
+                </div>
+                <div class="card border-success mb-3 col-3" style="max-width: 18rem;margin:20px;">
+                    <div class="card-header">Junior</div>
+                    <div class="card-body text-success">
+                        <p class="card-text">Tiene descuento</p>
+                        <h5 class="card-title">15%</h5>
+                        <h6 class="card-subtitle mb-2 text-muted">*Presentar documentacion</h6>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!--Inicio de el formulario a implementar-->
+        <section>
+            <h2>Valor de 200$</h2>
+            <form>
+                <div class="container-fluid">
+                    <div class="col-5">
+                        <input type="text" placeholder="Nombre">
+                    </div>
+                    <div class="col-5">
+                        <input type="text" placeholder="Apellido">
+                    </div>
+                    <div>
+                        <input type="email" placeholder="Correo">
+                    </div>
+                    <div>
+                        <input type="number" placeholder="cantidad" id="cantidad">
+                    </div>
+                    <div>
+                        <select id="select">
+                            <option value="Estudiante">Estudiante</option>
+                            <option value="Trainee">Trainee</option>
+                            <option value="Junior">Junior</option>
+                        </select>
+                    </div>
+                    <button id="enviar" >enviar</button>
+                </div>  
+            </form>
+            <p id="Pago">Pago:</p>    
+        </section>
+    </main>
+    
+
+    <!--inicio de el footer-->
+     <footer>
+       <ul>
+        <li><a href="#">Preguntas Frecuentes</a></li>
+        <li><a href="#">Contactanos</a></li>
+        <li><a href="#">Prensa</a></li>
+        <li><a href="#">Conferencias</a></li>
+        <li><a href="#">Terminos y Condiciones</a></li>
+        <li><a href="#">Privacidad</a></li>
+        <li><a href="#">Estudiantes</a></li>
+       </ul> 
+    </footer>
+    <script src="../bootstrap-5.2.2-dist/js/index.js"></script>
+
+</body>
+</html>
